@@ -27,6 +27,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    cursor: pointer;
 }
 
 .hero__container {
@@ -39,6 +40,12 @@ body {
 
 .hero__image {
     width: 100%;
+}
+
+.hero__text {
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
 }
 
 .navbar {
@@ -57,6 +64,23 @@ body {
     width: 100%;
 }
 
+/* Menu Styles*/
+
+.food__menu__card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.food__image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.food__menu__card__description{
+    padding: 20px;
+}
+
 @media (min-width: 768px){
     .navbar {
         justify-content: space-between;
@@ -66,7 +90,7 @@ body {
         width: 150px;
     }
     .button__primary {
-        padding: 20px;
+        padding: 12px 20px;
         font-size: 20px;
     }
     .hero__container {
@@ -80,14 +104,19 @@ body {
 
 @media (min-width: 1020px){
     .hero__image__container {
-        width: 500px;
-        height: 500px;
+        width: 100%;
+        
+    }
+    .hero__text{
+        font-size: 50px;
     }
     .container {
-        max-width: 1010px;
+        max-width: 900px;
     }
 }
 
 @media (min-width: 1400px){
-
+    .container {
+        max-width: 1250px;
+    }
 }
