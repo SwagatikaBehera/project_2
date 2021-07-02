@@ -168,26 +168,61 @@ body {
 
 .food__quote__image {
   width: 100%;
-  border-radius: 10px;
-  z-index: -2;
-}
-
-.food__qoute {
-  font-size: 20px;
-  position: absolute;
-  color: rgb(189, 212, 193);
-  text-align: center;
-  bottom: 20px;
-  
+  z-index: -20;
+  opacity: 0.86;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+  height: 200px;
+  border-radius: 10px 10px 30px 39px;
 }
 
 .food__quote__box {
-  text-align: right;
   width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  position: absolute;
+  color: rgb(252, 245, 245);
+  text-align: center;
+  top: 45%;
+  padding: 0 10px;
 }
 
 .quote__box {
   position: relative;
+}
+
+/* Footer*/
+
+.footer__container {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  margin-top: 50px;
+  height: 190px;
+  padding: 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.zomato__logo {
+  font-size: 40px;
+  font-weight: 850;
+  color: #fff;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.zomato__info__more {
+  padding-left: 15px;
+}
+
+.zomato__info__more__lists {
+  list-style-type: none;
+  color: #fff;
+  font-size: 17px;
 }
 
 /* Responsive*/
@@ -264,6 +299,30 @@ body {
     font-size: 18px;
     width: 60%;
     height: 47%;
+  }
+  .food__quote__image {
+    height: 300px;
+    box-shadow: none;
+    border-radius: 10px 10px 30px 39px;
+  }
+  .food__quote__box {
+    font-size: 35px;
+    color: white;
+    top: 40%;
+    font-weight: 500;
+  }
+  .quote__box {
+    margin: 0 50px;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    height: 170px;
+  }
+  .zomato__logo {
+    font-size: 50px;
+    margin-top: 15px;
   }
 }
 
